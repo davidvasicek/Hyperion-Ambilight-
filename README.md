@@ -42,35 +42,31 @@ V tomto tutoriálu se instalací samotného operačního systému na Raspberry P
 
 Konfigurace:
 
-    Zjistěte IP adresu vašeho zařízení Raspberry Pi a pomocí SSH se k němu připojte (Použíjte např. PuTTY) Login: osmc Password: osmc
-    Přihlaste se jako root, vytvořte nový adresář Hyperion ve vašém domovském adresáři a přepněte se do něj
-
-  sudo -i
-
-  mkdir /home/osmc/Hyperion
-
-  cd /home/osmc/Hyperion
-
+1. Zjistěte IP adresu vašeho zařízení Raspberry Pi a pomocí SSH se k němu připojte (Použíjte např. PuTTY) Login: osmc Password: osmc. 
+2. Přihlaste se jako root, vytvořte nový adresář Hyperion ve vašém domovském adresáři a přepněte se do něj
+```
+sudo -i
+mkdir /home/osmc/Hyperion
+cd /home/osmc/Hyperion
+```
 3. Stáhněte instalační skript hyperion a nastavte práva pro spouštění
-
-  wget -N https://raw.githubusercontent.com/tvdzwan/hyperion/master/bin/install_hyperion.sh
-
-  sudo chmod +x install_hyperion.sh
-
+```
+wget -N https://raw.githubusercontent.com/tvdzwan/hyperion/master/bin/install_hyperion.sh
+sudo chmod +x install_hyperion.sh
+```
 4. Nainstalujte potřebné repozitaře
-
-  sudo apt-get update && sudo apt-get -y install libqtcore4 libqtgui4 libqt4-network libusb-1.0-0
-
-  sudo apt-get -y install libprotobuf9 ca-certificates
-
+```
+sudo apt-get update && sudo apt-get -y install libqtcore4 libqtgui4 libqt4-network libusb-1.0-0
+sudo apt-get -y install libprotobuf9 ca-certificates
+```
 5. Spusťte instalační skript stažený v bodě 3)
-
-  sudo sh ./install_hyperion.sh
-
+```
+sudo sh ./install_hyperion.sh
+```
 6. Stáhněte .ZIP doplněk pro OSMC systém
-
-  wget -N https://github.com/LightberryEu/plugin.program.hyperion.configurator/archive/master.zip
-
+```
+wget -N https://github.com/LightberryEu/plugin.program.hyperion.configurator/archive/master.zip
+```
 7. Přejděte do prostředí OSMC a postupujte následujícími úkony:
 
 1. Povolení SPI: My OSMC -> Pi Config -> Hardware Support -> Enable SPI support -> zapnout
