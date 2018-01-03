@@ -73,11 +73,11 @@ wget -N https://github.com/LightberryEu/plugin.program.hyperion.configurator/arc
 ```
 7. Přejděte do prostředí OSMC a postupujte následujícími úkony:
 
-- Povolení SPI: My OSMC -> Pi Config -> Hardware Support -> Enable SPI support -> zapnout
+  - Povolení SPI: My OSMC -> Pi Config -> Hardware Support -> Enable SPI support -> zapnout
 
-- Instalce doplňku hyperion: Doplňky -> Prohlížeč doplňků (ikona otevřené krabice) -> Instalovat ze zip souboru -> Domovská složka -> Hyperion -> master.zip
+  - Instalce doplňku hyperion: Doplňky -> Prohlížeč doplňků (ikona otevřené krabice) -> Instalovat ze zip souboru -> Domovská složka -> Hyperion -> master.zip
 
-- Konfigurace hyperion: Doplňky -> Doplňky programů -> Hyperion Config Creator -> Lightberry HD for Raspberry Pi (ws28010) -> vložte počet LED diod horizontálně -> vložte počet LED diod vertikálně -> zadejte, kde LED pásek začíná -> zadejte počet LED diod
+  - Konfigurace hyperion: Doplňky -> Doplňky programů -> Hyperion Config Creator -> Lightberry HD for Raspberry Pi (ws28010) -> vložte počet LED diod horizontálně -> vložte počet LED diod vertikálně -> zadejte, kde LED pásek začíná -> zadejte počet LED diod
 
 8. Přistupte k příkazovému řádku a nastartujte službu hyperion
 ```
@@ -90,7 +90,7 @@ hyperion-remote --priority 50 --color green --duration 5000
 hyperion-remote --priority 50 --color blue --duration 5000
 hyperion-remote --priority 50 --color white --duration 5000
 ```
-Užití dalších parametrů můžete nalézt zde ( odkaz )
+  Užití dalších parametrů můžete nalézt zde ( odkaz )
 
 10. Pokud je vše v pořádku, máte hotovo. Pokud ne, pokračujte následujícími body
 
