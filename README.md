@@ -60,8 +60,7 @@ sudo chmod +x install_hyperion.sh
 ```
 4. Nainstalujte potřebné repozitaře
 ```
-sudo apt-get update && sudo apt-get -y install libqtcore4 libqtgui4 libqt4-network libusb-1.0-0
-sudo apt-get -y install libprotobuf9 ca-certificates
+sudo apt-get update && sudo apt-get -y install libqtcore4 libqtgui4 libqt4-network libusb-1.0-0 libprotobuf9 ca-certificates
 ```
 5. Spusťte instalační skript stažený v bodě 3)
 ```
